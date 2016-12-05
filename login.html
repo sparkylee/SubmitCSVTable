@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+ <head>
+<link rel="stylesheet" type="text/css" href="css/login.css" />
+</head>
+  
+  <body>
+
+    <h2>Modal Login Form</h2>
+
+    <button onclick="showModal()" style="width:auto;">Login</button>
+
+    <div id="id01" class="modal">
+
+      <form class="modal-content animate" action="upload.php"  method="post" enctype="multipart/form-data">
+
+            <div class="imgcontainer">
+              <span onclick="closeModal()" class="close" title="Close Modal">&times;</span>
+              <img src="img_avatar2.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+              <label><b>Username</b></label>
+
+              <input type="text" placeholder="Enter Username" name="uname" required>
+
+              <label><b>Password</b></label>
+
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <input type="file"   name="fileToUpload" id="fileToUpload" required> </br>
+            <?input type="submit" name="submit" value="Upload CSV file"?>
+
+                <button type="submit" name="submit">Login & Submit</button>
+
+              <input type="checkbox" checked="checked"> Remember me
+
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="closeModal()" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+
+      </form>
+
+    </div>
+   
+    <script>
+      // Get the modal
+      var modal = document.getElementById('id01');
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+	      if (event.target == modal) {
+	       closeModal();
+	      }
+      }      
+      
+      function closeModal()
+        {
+            modal.style.display="none";
+        }
+       function showModal()
+        {
+            modal.style.display="block";
+        }
+    </script>
+
+  </body>
+</html>

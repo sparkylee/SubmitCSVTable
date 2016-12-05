@@ -1,0 +1,5 @@
+date,category,address,expense description,pre-tax amount,tax name,tax amount
+12/1/2013,Travel,Don Draper,"783 Park Ave, 
+12/15/2013,Meals and Entertainment,Steve Jobs,"1 Infinite Loop, Cupertino, CA 95014",Team lunch, 235.00 ,CA Sales tax, ertino, CA 95014",HP Laptop, 999.00 ,CA Sales tax, 74.93
+12/14/2013,Computer - Software,Tim Cook,"1 Infinite Loop, Cupertino, CA 95014",Microsoft Office, 899.00 ,CA Sales tax, 67.43
+12/6/2013,Computer - Software,Sergey Brin,"1600
